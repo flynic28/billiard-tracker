@@ -14,3 +14,12 @@
     width: 100%;
     height: 100%;
 }
+
+:root {
+    /* Set the background of the entire app */
+    --ion-background-color: #E1E2E1;
+    ion-toolbar {
+        --background: var(--ion-color-dark);
+        --color: var(--ion-color-dark-contrast);
+    }
+}
