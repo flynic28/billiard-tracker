@@ -47,19 +47,35 @@ export class UserFormPage implements OnInit {
         this.users[this.userIndex].firstName = form.value.firstName;
         this.users[this.userIndex].lastName = form.value.lastName;
       } else {
-        this.users.push({
-          'id': Math.floor(1000 + Math.random() * 9000),
-          'firstName': form.value.firstName,
-          'lastName': form.value.lastName,
-          'eightBallRecord': {
-            'wins': 0,
-            'played': 0
-          },
-          'nineBallRecord': {
-            'wins': 0,
-            'played': 0
-          }
-        });
+        if (this.users === null) {
+          this.users = [{
+            'id': Math.floor(1000 + Math.random() * 9000),
+            'firstName': form.value.firstName,
+            'lastName': form.value.lastName,
+            'eightBallRecord': {
+              'wins': 0,
+              'played': 0
+            },
+            'nineBallRecord': {
+              'wins': 0,
+              'played': 0
+            }
+          }]
+        } else {
+          this.users.push({
+            'id': Math.floor(1000 + Math.random() * 9000),
+            'firstName': form.value.firstName,
+            'lastName': form.value.lastName,
+            'eightBallRecord': {
+              'wins': 0,
+              'played': 0
+            },
+            'nineBallRecord': {
+              'wins': 0,
+              'played': 0
+            }
+          });
+        }
       }
       this.closeModal();
     }
