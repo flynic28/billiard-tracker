@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "firstName": "Nicholas",
+        "lastName": "Fly",
+        "eightBallRecord": {
+            "wins": 4,
+            "played": 5          
+        },
+        "nineBallRecord": {
+            "wins": 1,
+            "played": 11         
+        }
+    },
+    {
+        "id": 2,
+        "firstName": "John",
+        "lastName": "Doe",
+        "eightBallRecord": {
+            "wins": 4,
+            "played": 59         
+        },
+        "nineBallRecord": {
+            "wins": 0,
+            "played": 0         
+        }
+    },
+    {
+        "id": 3,
+        "firstName": "Matt",
+        "lastName": "Smith",
+        "eightBallRecord": {
+            "wins": 13,
+            "played": 15         
+        },
+        "nineBallRecord": {
+            "wins": 0,
+            "played": 0         
+        }
+    },
+    {
+        "id": 4,
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "eightBallRecord": {
+            "wins": 4,
+            "played": 4          
+        },
+        "nineBallRecord": {
+            "wins": 1,
+            "played": 3
+        }
+    },
+    {
+        "id": 6,
+        "firstName": "Harry",
+        "lastName": "Hope",
+        "eightBallRecord": {
+            "wins": 0,
+            "played": 5
+        },
+        "nineBallRecord": {
+            "wins": 5,
+            "played": 8         
+        }
+    },
+    {
+        "id": 7,
+        "firstName": "Wesley",
+        "lastName": "Booth",
+        "eightBallRecord": {
+            "wins": 4,
+            "played": 9          
+        },
+        "nineBallRecord": {
+            "wins": 0,
+            "played": 1         
+        }
+    },
+    {
+        "id": 8,
+        "firstName": "Robert",
+        "lastName": "Normal",
+        "eightBallRecord": {
+            "wins": 2,
+            "played": 5          
+        },
+        "nineBallRecord": {
+            "wins": 1,
+            "played": 1         
+        }
+    }
+]

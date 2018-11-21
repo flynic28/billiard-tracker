@@ -1,5 +1,7 @@
 {
   "name": "billiard_tracker",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

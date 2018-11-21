@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>User Form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit(userForm)">
+    <ion-item>
+      <ion-label position="fixed">First Name</ion-label>
+      <ion-input type="text" formControlName="firstName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed">Last Name</ion-label>
+      <ion-input type="text" formControlName="lastName"></ion-input>
+    </ion-item>
+    <ion-row text-center>
+      <ion-col padding-top>
+        <ion-button ion-item color="secondary" (click)="closeModal()">
+          Cancel
+        </ion-button>
+        <ion-button ion-item (click)="onSubmit(userForm)" [disabled]="userForm.status !== 'VALID'">
+          Submit
+        </ion-button>    
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

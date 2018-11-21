@@ -1,0 +1,13 @@
+.comination-item {
+    display: flex;
+    .item-inner {
+        display: none;
+    }
+    .item-select {
+        flex: 1;
+    }
+}
+
+.no-label {
+    width: auto;
+}

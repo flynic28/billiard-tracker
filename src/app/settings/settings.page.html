@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-menu-toggle>
+    </ion-buttons>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item button (click)='setLoadStatic()'>
+      Load Static Data
+    </ion-item>
+    <ion-item button (click)='presentDeleteConfirm()'>
+      Delete Local Data
+    </ion-item>
+  </ion-list>
+
+</ion-content>

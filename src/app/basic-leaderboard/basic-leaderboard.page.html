@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-menu-toggle>
+    </ion-buttons>
+    <ion-title>Leaderboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scroll-y="false">
+  <ion-grid no-padding ion-fixed class="fill">
+    <ion-row responsive-sm class="fill">
+      <ion-col size="12" size-md no-padding class="leaderboard-container">
+          <ion-toolbar>
+            <ion-title>Eight Ball Leaderboard</ion-title>
+            <ion-buttons slot="end">
+              <ion-button fill="clear" disabled="true">
+                Win %
+              </ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        <div class="leaderboard overflow-y">
+          <ion-list *ngIf="eightBallRecords.length > 0">
+            <ion-item lines="full" *ngFor="let record of eightBallRecords; let i = index" >
+              <ion-label>{{ record.firstName }} {{ record.lastName }}</ion-label>
+              <ion-button slot="end" fill="clear" disabled="true">{{ record.percent | percent}}</ion-button>
+            </ion-item>
+          </ion-list>
+          <ion-grid class="fill" *ngIf="nineBallRecords.length === 0">
+            <ion-row align-items-center class="fill">
+              <ion-col text-center>
+                <p>No Players Found</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+        </div>
+      </ion-col>
+      <ion-col size="12" size-md no-padding class="leaderboard-container">
+          <ion-toolbar>
+            <ion-title>Nine Ball Leaderboard</ion-title>
+            <ion-buttons slot="end">
+              <ion-button fill="clear" disabled="true">
+                Win %
+              </ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        <div class="leaderboard overflow-y">
+          <ion-list *ngIf="nineBallRecords.length > 0">
+            <ion-item lines="full" button *ngFor="let record of nineBallRecords; let i = index">
+              <ion-label>{{ record.firstName }} {{ record.lastName }}</ion-label>
+              <ion-button slot="end" fill="clear" disabled="true">{{ record.percent | percent }}</ion-button>
+            </ion-item>
+          </ion-list>
+          <ion-grid class="fill" *ngIf="nineBallRecords.length === 0">
+            <ion-row align-items-center class="fill">
+              <ion-col text-center>
+                <p>No Players Found</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
